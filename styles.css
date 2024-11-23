@@ -1,0 +1,38 @@
+body {
+    cursor: url('./images/cheeseCursor.png') 20 20, auto;
+    .background {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* background lines */
+        background-color: #ffffff;
+        opacity: 0.8;
+        background-image:  linear-gradient(#fffdd3 4px, transparent 4px), linear-gradient(to right, #fffdd3 4px, #ffffff 4px);
+        background-size: 80px 80px;
+        text-decoration: none;
+    
+        /* custom cursor */
+        .container {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 90%;
+                max-width: 1000px;
+            }
+            .text {
+                font-size: 2.5rem;
+                font-weight: 400;
+                color: black;
+                font-family: system-ui;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+}
